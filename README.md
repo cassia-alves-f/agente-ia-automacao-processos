@@ -10,7 +10,7 @@ Projeto desenvolvido em equipe para o Desafio de IA da Renault Group Brasil, em 
 
 O Desafio de IA da Renault Group Brasil é uma competição interna entre equipes para desenvolver agentes de IA que automatizem processos manuais da empresa. O programa incluiu um processo de onboarding e aprendizado para as equipes participantes.
 
-Nossa equipe, de três pessoas, avaliou três processos candidatos e escolheu a atualização diária de um sistema interno, porque era um processo muito demorado dentro do nosso time.
+Nossa equipe, de duas pessoas, avaliou três processos candidatos e escolheu a atualização diária de um sistema interno, porque era um processo muito demorado dentro do nosso time.
 
 ## O problema
 
@@ -52,4 +52,4 @@ A equipe fica só com a revisão final antes do envio, que funciona como control
 
 ## Status
 
-Apresentação no Desafio de IA em 2 de outubro de 2026. O resultado será atualizado aqui depois da apresentação.
+Apresentações do Desafio de IA em outubro de 2026.
