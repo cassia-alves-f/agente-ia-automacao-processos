@@ -2,9 +2,15 @@
 
 Agente de IA no Microsoft Copilot, integrado ao Power Automate e ao Office Scripts, que substituiu uma macro VBA e executa na nuvem, sem intervenção manual, a atualização diária de um sistema interno.
 
-Projeto desenvolvido em equipe no Desafio de IA da Renault Group Brasil, em 2026.
+Projeto desenvolvido em equipe para o Desafio de IA da Renault Group Brasil, em 2026.
 
 **Este repositório é apenas documentação.** Por ser um projeto interno, não contém código, telas, bases nem dados da empresa.
+
+## O desafio
+
+O Desafio de IA da Renault Group Brasil é uma competição interna entre equipes para desenvolver agentes de IA que automatizem processos manuais da empresa. O programa incluiu um processo de onboarding e aprendizado para as equipes participantes.
+
+Nossa equipe, de três pessoas, avaliou três processos candidatos e escolheu a atualização diária de um sistema interno, porque era um processo muito demorado dentro do nosso time.
 
 ## O problema
 
@@ -31,9 +37,11 @@ A equipe fica só com a revisão final antes do envio, que funciona como control
 
 ## Como o projeto foi conduzido
 
-- Avaliação de três processos candidatos à automação e escolha de um deles para o desafio
-- Mapeamento do processo com a área responsável: etapas, regras de negócio e exceções
-- Construção do agente e das automações a partir desse mapeamento
+1. Onboarding e aprendizado no programa do desafio
+2. Avaliação de três processos candidatos e escolha da atualização diária, por ser muito demorada para o time
+3. Mapeamento do processo com a área responsável: etapas, regras de negócio e exceções
+4. Construção do agente e das automações a partir desse mapeamento
+5. Apresentação do projeto no desafio
 
 ## Ferramentas
 
@@ -44,4 +52,4 @@ A equipe fica só com a revisão final antes do envio, que funciona como control
 
 ## Status
 
-Apresentações do Desafio de IA em outubro de 2026.
+Apresentação no Desafio de IA em 2 de outubro de 2026. O resultado será atualizado aqui depois da apresentação.
