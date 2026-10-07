@@ -38,7 +38,7 @@ A função de quem usa passa a ser só disponibilizar as bases e conferir o resu
 
 ## Próximos passos
 
-Testar com a responsável pelo processo, implementar melhorias a partir do retorno dela e levar o mesmo modelo para outras rotinas da área.
+Levar o mesmo modelo para outras rotinas da área.
 
 ## Ferramentas
 
