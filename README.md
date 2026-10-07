@@ -25,21 +25,11 @@ O agente conduz o processo de ponta a ponta:
 
 A equipe fica só com a revisão final.
 
-## O caminho até a solução
+## Como foi construído
 
 1. **Mapeamento:** documentação do processo em um guia passo a passo, junto com a gravação em vídeo da rotina completa.
-2. **Primeira abordagem:** tradução da macro VBA de uma das etapas para Office Scripts, com um fluxo no Power Automate. O resultado foi validado contra a macro original, com 100% de correspondência nos totais.
-3. **Mudança de rota:** a equipe concluiu que aquilo era uma automação, e não um agente, como o desafio pedia. O projeto passou a ser construído como um agente no Copilot Studio.
-4. **Evolução do agente:** a lógica já validada foi levada para o agente, junto com novas instruções para uma conversa mais natural e para explicar os erros em português.
-
-## Automação x agente
-
-| | Automação (primeira abordagem) | Agente (versão final) |
-| --- | --- | --- |
-| Como funciona | Executa passos fixos | Conduz o processo e aplica as regras de negócio |
-| Conferência | Feita depois, por uma pessoa | O agente confere os resultados e aponta alertas |
-| Quando algo dá errado | Gera um erro técnico | Explica o erro em linguagem natural |
-| Interação | Nenhuma | Conversa com quem usa |
+2. **Tradução da macro:** a lógica da macro VBA foi traduzida para Office Scripts, com um fluxo no Power Automate, e validada contra a macro original, com 100% de correspondência nos totais.
+3. **Desenvolvimento do agente:** a lógica validada foi levada para um agente no Copilot Studio, com instruções para conversar de forma natural com quem usa e explicar os erros em português.
 
 ## Resultados
 
