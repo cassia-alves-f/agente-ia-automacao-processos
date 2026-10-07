@@ -1,55 +1,59 @@
 # Agente de IA para Automação de Processos
 
-Agente de IA no Microsoft Copilot, integrado ao Power Automate e ao Office Scripts, que substituiu uma macro VBA e executa na nuvem, sem intervenção manual, a atualização diária de um sistema interno.
-
-Projeto desenvolvido em equipe para o Desafio de IA da Renault Group Brasil, em 2026.
+Agente de IA criado no Copilot Studio, no Desafio de IA da Renault Group Brasil, que substituiu uma macro VBA na atualização diária de um sistema interno e reduziu o tempo da tarefa em cerca de 94%.
 
 **Este repositório é apenas documentação.** Por ser um projeto interno, não contém código, telas, bases nem dados da empresa.
 
 ## O desafio
 
-O Desafio de IA da Renault Group Brasil é uma competição interna entre equipes para desenvolver agentes de IA que automatizem processos manuais da empresa. O programa incluiu um processo de onboarding e aprendizado para as equipes participantes.
-
-Nossa equipe, de duas pessoas, avaliou três processos candidatos e escolheu a atualização diária de um sistema interno, porque era um processo muito demorado dentro do nosso time.
+O Desafio de IA da Renault Group Brasil é uma competição interna entre equipes, com uma fase de onboarding e aprendizado. O requisito era criar um agente de IA para melhorar uma tarefa da área. Escolhemos uma rotina diária que tomava muito tempo do nosso time.
 
 ## O problema
 
-A atualização diária do sistema dependia de uma macro VBA que só rodava com alguém abrindo o arquivo no computador. Todo dia, os cálculos, as fórmulas e a atualização dos dados passavam por essa execução manual, antes de os dados seguirem para a conferência do mercado global.
+A atualização diária do sistema era feita manualmente, com apoio de uma macro VBA que só rodava com alguém abrindo o arquivo no computador. A rotina envolvia várias bases de dados, cálculos, fórmulas e geração de arquivos, dependia de uma única pessoa e estava sujeita a erros manuais.
 
-## A solução
+## O que o agente faz
 
-Um agente de IA que executa o processo inteiro na nuvem:
+O agente conduz o processo de ponta a ponta:
 
-- Cálculos e aplicação de fórmulas
-- Atualização dos dados
-- Preparação para o envio à conferência do mercado global
+- Trata os dados
+- Aplica as regras de negócio
+- Confere os resultados
+- Aponta alertas quando algo foge do esperado
+- Explica os erros em linguagem natural
+- Gera os arquivos finais
 
-A equipe fica só com a revisão final antes do envio, que funciona como controle de qualidade.
+A equipe fica só com a revisão final.
 
-## Antes e depois
+## O caminho até a solução
 
-| | Antes | Depois |
+1. **Mapeamento:** documentação do processo em um guia passo a passo, junto com a gravação em vídeo da rotina completa.
+2. **Primeira abordagem:** tradução da macro VBA de uma das etapas para Office Scripts, com um fluxo no Power Automate. O resultado foi validado contra a macro original, com 100% de correspondência nos totais.
+3. **Mudança de rota:** a equipe concluiu que aquilo era uma automação, e não um agente, como o desafio pedia. O projeto passou a ser construído como um agente no Copilot Studio.
+4. **Evolução do agente:** a lógica já validada foi levada para o agente, junto com novas instruções para uma conversa mais natural e para explicar os erros em português.
+
+## Automação x agente
+
+| | Automação (primeira abordagem) | Agente (versão final) |
 | --- | --- | --- |
-| Ferramenta | Macro VBA | Agente de IA com Power Automate e Office Scripts |
-| Onde roda | No computador, com o arquivo aberto | Na nuvem |
-| Execução | Manual, todos os dias | Automática, sem intervenção manual |
-| Papel da equipe | Executar o processo | Revisar o resultado antes do envio |
+| Como funciona | Executa passos fixos | Conduz o processo e aplica as regras de negócio |
+| Conferência | Feita depois, por uma pessoa | O agente confere os resultados e aponta alertas |
+| Quando algo dá errado | Gera um erro técnico | Explica o erro em linguagem natural |
+| Interação | Nenhuma | Conversa com quem usa |
 
-## Como o projeto foi conduzido
+## Resultados
 
-1. Onboarding e aprendizado no programa do desafio
-2. Avaliação de três processos candidatos e escolha da atualização diária, por ser muito demorada para o time
-3. Mapeamento do processo com a área responsável: etapas, regras de negócio e exceções
-4. Construção do agente e das automações a partir desse mapeamento
-5. Apresentação do projeto no desafio
+- **Validação:** os resultados do agente bateram com os do processo manual.
+- **Impacto estimado:** redução de cerca de 94% no tempo da tarefa.
+- **Descobertas no caminho:** o agente revelou inconsistências nos dados que o processo antigo não tratava.
 
 ## Ferramentas
 
-- Microsoft Copilot
+- Copilot Studio
+- Office Scripts (TypeScript)
 - Power Automate
-- Office Scripts
 - Excel
 
 ## Status
 
-Apresentações do Desafio de IA em outubro de 2026.
+Projeto apresentado no Desafio de IA em outubro de 2026.
