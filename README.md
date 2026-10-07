@@ -1,45 +1,49 @@
 # Agente de IA para Automação de Processos
 
-Agente de IA criado no Copilot Studio, no Desafio de IA da Renault Group Brasil, que substituiu uma macro VBA na atualização diária de um sistema interno e reduziu o tempo da tarefa em cerca de 94%.
+Agente criado no Copilot Studio, no Desafio de IA da Renault Group Brasil, que assume de ponta a ponta a atualização diária de um sistema interno e reduz o tempo da tarefa em cerca de 94%.
 
 **Este repositório é apenas documentação.** Por ser um projeto interno, não contém código, telas, bases nem dados da empresa.
 
-## O desafio
-
-O Desafio de IA da Renault Group Brasil é uma competição interna entre equipes, com uma fase de onboarding e aprendizado. O requisito era criar um agente de IA para melhorar uma tarefa da área. Escolhemos uma rotina diária que tomava muito tempo do nosso time.
-
 ## O problema
 
-A atualização diária do sistema era feita manualmente, com apoio de uma macro VBA que só rodava com alguém abrindo o arquivo no computador. A rotina envolvia várias bases de dados, cálculos, fórmulas e geração de arquivos, dependia de uma única pessoa e estava sujeita a erros manuais.
+A atualização diária de um sistema interno, que alimenta um dashboard de acompanhamento, era feita manualmente por uma única pessoa. Todos os dias eram cinco bases de origens diferentes (sistemas, relatórios e e-mail), tratadas com macros, fórmulas e cópias, até a exportação manual dos arquivos XML carregados no sistema. A rotina levava cerca de 3 horas por dia, cerca de 750 horas por ano, dependia de uma pessoa e estava sujeita a erros.
 
-## O que o agente faz
+## A solução
 
-O agente conduz o processo de ponta a ponta:
+Criamos um agente no Copilot Studio que assume todo o processo. Mapeamos tudo o que a macro e as fórmulas faziam e ensinamos essas regras ao agente, por meio de instruções e de códigos de referência que ele mesmo executa. Integramos o agente a uma pasta do SharePoint da equipe, onde ficam as bases do dia e os arquivos de apoio, para que ele busque tudo sozinho. Assim, o agente faz o trabalho completo: localiza as bases, aplica as regras de cálculo, confere os resultados e gera os arquivos finais.
 
-- Trata os dados
-- Aplica as regras de negócio
-- Confere os resultados
-- Aponta alertas quando algo foge do esperado
-- Explica os erros em linguagem natural
-- Gera os arquivos finais
+## Como funciona
 
-A equipe fica só com a revisão final.
+1. A pessoa responsável salva as bases do dia na pasta do SharePoint e pede a atualização ao agente.
+2. O agente busca os arquivos, faz todos os cálculos que antes eram manuais, confere os totais e aponta qualquer inconsistência.
+3. O agente devolve os arquivos XML prontos para subir no sistema, explicando os alertas em linguagem simples.
+4. A pessoa responsável confere e faz o upload, mantendo a validação humana antes de os dados chegarem à gestão.
 
-## Como foi construído
-
-1. **Mapeamento:** documentação do processo em um guia passo a passo, junto com a gravação em vídeo da rotina completa.
-2. **Análise da macro:** leitura da macro VBA para entender exatamente o que ela fazia em cada etapa.
-3. **Desenvolvimento do agente:** o processo e a lógica da macro foram transformados em instruções para um agente no Copilot Studio, que passou a executar a rotina completa, conversando de forma natural com quem usa e explicando os erros em português.
+A função de quem usa passa a ser só disponibilizar as bases e conferir o resultado. Todo o trabalho do meio fica com o agente.
 
 ## Resultados
 
-- **Validação:** os resultados do agente bateram com os do processo manual.
-- **Impacto estimado:** redução de cerca de 94% no tempo da tarefa.
-- **Descobertas no caminho:** o agente revelou inconsistências nos dados que o processo antigo não tratava.
+- Os arquivos gerados pelo agente foram conferidos contra o processo manual: os XMLs saíram idênticos aos originais e os números bateram.
+- O tempo estimado cai de cerca de 3 horas para cerca de 10 minutos por dia, uma redução de cerca de 94%:
+
+| | Por dia | Por semana | Por mês | Por ano |
+| --- | --- | --- | --- | --- |
+| Antes (manual) | 3 h | 15 h | 63 h | 750 h |
+| Com o agente | ~10 min | ~50 min | ~3,5 h | ~42 h |
+| Economia | ~2h50 | ~14 h | ~59,5 h | ~708 h |
+
+- O processo deixa de depender de uma única pessoa e passa a ter conferência automática todos os dias.
+
+*Premissas: 21 dias úteis por mês e cerca de 250 por ano.*
+
+## Próximos passos
+
+Testar com a responsável pelo processo, implementar melhorias a partir do retorno dela e levar o mesmo modelo para outras rotinas da área.
 
 ## Ferramentas
 
 - Copilot Studio
+- SharePoint
 - Excel
 - VBA (análise da macro original)
 
