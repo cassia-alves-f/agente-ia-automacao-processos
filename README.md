@@ -28,8 +28,8 @@ A equipe fica só com a revisão final.
 ## Como foi construído
 
 1. **Mapeamento:** documentação do processo em um guia passo a passo, junto com a gravação em vídeo da rotina completa.
-2. **Tradução da macro:** a lógica da macro VBA foi traduzida para Office Scripts, com um fluxo no Power Automate, e validada contra a macro original, com 100% de correspondência nos totais.
-3. **Desenvolvimento do agente:** a lógica validada foi levada para um agente no Copilot Studio, com instruções para conversar de forma natural com quem usa e explicar os erros em português.
+2. **Análise da macro:** leitura da macro VBA para entender exatamente o que ela fazia em cada etapa.
+3. **Desenvolvimento do agente:** o processo e a lógica da macro foram transformados em instruções para um agente no Copilot Studio, que passou a executar a rotina completa, conversando de forma natural com quem usa e explicando os erros em português.
 
 ## Resultados
 
@@ -40,9 +40,8 @@ A equipe fica só com a revisão final.
 ## Ferramentas
 
 - Copilot Studio
-- Office Scripts (TypeScript)
-- Power Automate
 - Excel
+- VBA (análise da macro original)
 
 ## Status
 
